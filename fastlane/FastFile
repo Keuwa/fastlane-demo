@@ -11,7 +11,7 @@ lane :deploy do
   version = get_version_number()
   if git_branch() == "master"
     set_github_release(
-      repository_name: "fastlane-demo",
+      repository_name: "Keuwa/fastlane-demo",
       api_token: ENV["GITHUB_TOKEN"],
       name: version,
       tag_name: "v#{version}",
